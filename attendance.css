@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15vh 0 10vh 0;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#qrcode-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
