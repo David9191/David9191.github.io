@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      #qrcode {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+    <title>QR 생성</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"
+      integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <h1>QR-CODE 인증 화면</h1>
+    <div id="qrcode"></div>
+
+    <script type="text/javascript">
+      var qrcode = new QRCode('qrcode', {
+        text: 'https://google.com',
+        width: 128,
+        height: 128,
+        colorDark: '#000000',
+        colorLight: '#ffffff',
+      });
+    </script>
+    <script type="src" src="./qrVarification.js"></script>
+  </body>
+</html>
